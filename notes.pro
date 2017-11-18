@@ -37,3 +37,6 @@ FORMS += \
 
 RESOURCES += \
     resources/resources.qrc
+
+DISTFILES += \
+    LICENSE
