@@ -17,6 +17,12 @@ public:
 
 private:
     Ui::NoteWindow *ui;
+
+private slots:
+    void EmitCreateNote();
+
+signals:
+    void CreateNote();
 };
 
 #endif // NOTEWINDOW_H

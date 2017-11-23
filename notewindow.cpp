@@ -7,9 +7,14 @@ NoteWindow::NoteWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     //this->setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
+
+    connect(ui->btn_NewNote, SIGNAL(clicked()), this, SLOT(EmitCreateNote()));
 }
 
-NoteWindow::~NoteWindow()
-{
+NoteWindow::~NoteWindow() {
     delete ui;
+}
+
+void NoteWindow::EmitCreateNote() {
+    emit this->CreateNote();
 }
