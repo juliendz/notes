@@ -1,0 +1,43 @@
+Two types of notes:
+tab -> parent window
+window
+
+Note:
+id: uuid
+type: tab or window
+parent: 0 or window id (tab)
+position & size(tab): x, y, w, h
+
+Notes Persistence:
+* Note content saved in json files
+        Each file  is named after the note id
+  Format:
+  {
+        id:
+        type:
+        parent_id:
+        order:
+        position: {
+                x:
+                y:
+                w:
+                h:
+        }
+        contents: {
+        }
+
+
+  }
+
+Notes list persistence:
+* List of ids in notes.json
+  Format:
+  {
+        notes:[
+                {
+                        id:
+                }
+        ]
+        count:
+  
+  }

@@ -39,4 +39,5 @@ RESOURCES += \
     resources/resources.qrc
 
 DISTFILES += \
-    LICENSE
+    LICENSE \
+    todo.txt
